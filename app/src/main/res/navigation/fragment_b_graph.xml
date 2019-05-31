@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fragment_b_graph" app:startDestination="@id/navigation_b">
+
+    <fragment android:id="@+id/navigation_b" android:name="com.example.navtest.fragments.FragmentB"
+              android:label="FragmentB">
+        <action android:id="@+id/action_fragmentB_to_fragmentB1" app:destination="@id/navigation_b1"/>
+    </fragment>
+    <fragment android:id="@+id/navigation_b2" android:name="com.example.navtest.fragments.FragmentB2"
+              android:label="FragmentB2"/>
+    <fragment android:id="@+id/navigation_b1" android:name="com.example.navtest.fragments.FragmentB1"
+              android:label="FragmentB1">
+        <action android:id="@+id/action_fragmentB1_to_fragmentB2" app:destination="@id/navigation_b2"/>
+    </fragment>
+</navigation>
